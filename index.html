@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3a9bf29575.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+    <header id="home">
+        <nav id="nav"> 
+            <a href="#">Portfolio</a>           
+            <ul id="sidemenu">
+                <li><a href="#home">Home</a></li> <!--add ids-->
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            
+        </nav>
+
+        <div class="header-text">
+            <p>Software Engineering UG</p>
+            <h1>Hi, I'm <span>Sachini Weerakkody</span> <br>from University of Kelaniya</h1>
+            <div id="title-container">
+                <p><span id="title"></span></p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/sachini-weerakkody-843b392a3" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/SachiniUresha"><i class="fa-brands fa-github" target="_blank" rel="noopener noreferrer"></i></a>
+                <a href="https://medium.com/@sachiniweerakkody"><i class="fa-brands fa-medium" target="_blank" rel="noopener noreferrer"></i></a>
+                <a href="https://www.instagram.com/.sachx.?igsh=YjdlOHc3M2ZsZHB4" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+       
+
+        <div class="right-container">
+
+        </div>
+        <div class="design">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+
+    </header>
+
+<!-- -----------------About-------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/WhatsApp Image 2025-04-04 at 16.59.21_8284a0fc.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a self-motivated and enthusiastic individual with a strong sense of responsibility and a passion for continuous learning. I thrive on challenges, am driven by goals, and take pride in delivering high-quality results. With a hardworking nature and a growth mindset, I am always eager to explore new opportunities and contribute meaningfully to every project I undertake.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certification')">Certification</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <dl>
+                            <dt>Reading for BSc (Hons) in Software Engineering degree </dt>
+                                <dd>at University of Kelaniya </dd>
+                                <dd>July 2023 – Present</dd>
+                            <dt>Diploma in IT</dt>
+                                <dd>Esoft Metro College, Piliyandala</dd>
+                                <dd>March 2022 - March 2023</dd>
+                            <dt>Diploma in English Language and Literature</dt>
+                                <dd>Aquinas College of Higher Studies, Colombo.</dd>
+                                <dd>March 2022 - January 2023</dd>
+                            <dt>G.C.E. Advanced Level</dt>
+                                <dd>Anula Vidyalaya, Nugegoda</dd>
+                                <dd>Physical science | 1.5969 | 2021 | Chemistry A | Physics B | Combined Maths C</dd>
+                                <dd>2020 | General English A | General Knowledge 64</dd>
+                            <dt>G.C.E. Ordinary Level</dt>
+                                <dd>Anula Vidyalaya, Nugegoda</dd>
+                                <dd>2017 | 9A</dd>
+                                <dd>2018 | Tamil A</dd>
+                           
+                        </dl>
+                    </div>
+                    <div class="tab-contents" id="certification">
+                        <dl>
+                            <dt>POSTMAN API Foundermentals Student Expert</dt>
+                                <dd>March 2025</dd>
+                            <dt>Diploma in C programming </dt>
+                                <dd>Alison | December 2023</dd>
+                            <dt>Fundamentals of HTML </dt>
+                                <dd>Alison | May 2024</dd>
+                            <dt>Introduction to Java</dt>
+                                <dd>Sololearn | May 2024</dd>
+                            <dt>Introduction to CSS </dt>
+                                <dd>Sololearn | May 2024</dd>
+                            <dt>Introduction to HTML</dt>
+                                <dd>Sololearn | May 2024</dd>
+                            
+                           
+                        </dl>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <dl>
+                            <dt>HTML and CSS</dt>
+                            <dt>Java</dt>
+                            <dt>JavaScript</dt>
+                            <dt>C</dt>
+                            <dt>C#</dt>
+                            <dt>Python</dt>
+
+                           
+                        </dl>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                       
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   
+
+        <!-- ------------------Projects------------------------ -->
+
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/Screenshot 2025-04-06 124014.png" alt="">
+                        <div class="layer">
+                            <h3>Audio Renting Platform</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et animi recusandae laborum nemo numquam quis, rem illo odit harum facere, dicta eveniet cum dolore veritatis. Odio qui ipsam id!</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/Screenshot 2025-04-06 124014.png" alt="">
+                        <div class="layer">
+                            <h3>Audio Renting Platform</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et animi recusandae laborum nemo numquam quis, rem illo odit harum facere, dicta eveniet cum dolore veritatis. Odio qui ipsam id!</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/Screenshot 2025-04-06 124014.png" alt="">
+                        <div class="layer">
+                            <h3>Audio Renting Platform</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et animi recusandae laborum nemo numquam quis, rem illo odit harum facere, dicta eveniet cum dolore veritatis. Odio qui ipsam id!</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/Screenshot 2025-04-06 124014.png" alt="">
+                        <div class="layer">
+                            <h3>Audio Renting Platform</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et animi recusandae laborum nemo numquam quis, rem illo odit harum facere, dicta eveniet cum dolore veritatis. Odio qui ipsam id!</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a href="#" class="btn">See more</a>
+
+            </div>
+        </div>
+
+         <!-- ------------------Blogs------------------------ -->
+
+    <div id="blogs">
+        <div class="container">
+            <h1 class="sub-title">Blogs</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Web design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, corporis eum consequuntur quisquam facilis reprehenderit id aliquam, corrupti accusantium molestiae dolor ad beatae odio nesciunt soluta cum expedita! Eum, totam!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-shield"></i>
+                    <h2>Web design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, corporis eum consequuntur quisquam facilis reprehenderit id aliquam, corrupti accusantium molestiae dolor ad beatae odio nesciunt soluta cum expedita! Eum, totam!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user-secret"></i>
+                    <h2>Web design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, corporis eum consequuntur quisquam facilis reprehenderit id aliquam, corrupti accusantium molestiae dolor ad beatae odio nesciunt soluta cum expedita! Eum, totam!</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+                <!-- ------------------contact------------------------ -->
+
+        <div id="contact">
+            <div class="container">  
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>dsuweerakkody19@gmail.com</p>
+                        <p><i class="fa-solid fa-phone-volume"></i>0702838323</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/sachini-weerakkody-843b392a3" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/SachiniUresha"><i class="fa-brands fa-github" target="_blank" rel="noopener noreferrer"></i></a>
+                            <a href="https://medium.com/@sachiniweerakkody"><i class="fa-brands fa-medium" target="_blank" rel="noopener noreferrer"></i></a>
+                            <a href="https://www.instagram.com/.sachx.?igsh=YjdlOHc3M2ZsZHB4" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <a href="images/SE_2021_018 Weerakkody D.S.U..pdf" download class="btn btn2">Download CV</a>
+
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>  <!--name goes to the spreadsheet-->
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+
+
+
+
+        <footer>
+            <div class="copyright">
+                <p>Thank you for scrolling all the way down. You're awesome! <i class="fa-solid fa-heart"></i></p>
+            </div>
+        </footer>
+
+    
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0"; // whenever side =0 it is visible
+            
+
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"; // whenever side =0 it is visible
+
+
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbykKK9Vacp-xTCDeL6UACm-Z38voUkSIvf4xx-HGBP4hiDaezpfzQg3dzpDFd5Sy4df/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg  = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){ //after 5 s the msg will be diappeared
+                    msg.innerHTML = ""
+                },5000)
+                form.reset() //reset the input fields
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+<script>
+    const titles = [
+      "💻 DevOps Enthusiast ",
+      "🌐 Full Stack Explorer",
+      "✍️ Tech Blogger",
+      "☁️ Cloud Learner ",
+      "📊 Data Curious "
+     
+      
+    ];
+    
+    let titleIndex = 0;
+    let charIndex = 0;
+    const titleElement = document.getElementById('title');
+    let typing = true;
+
+    function typeTitle() {
+  if (charIndex < titles[titleIndex].length) {
+    titleElement.textContent += titles[titleIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(typeTitle, 100); // Adjust typing speed here
+  } else {
+    setTimeout(deleteTitle, 1000); // Wait before deleting the current title
+  }
+}
+
+function deleteTitle() {
+  if (charIndex > 0) {
+    titleElement.textContent = titleElement.textContent.slice(0, -1);
+    charIndex--;
+    setTimeout(deleteTitle, 50); // Adjust deleting speed here
+  } else {
+    titleIndex = (titleIndex + 1) % titles.length; // Move to next title
+    setTimeout(typeTitle, 1000); // Wait before typing the next title
+  }
+}
+
+typeTitle(); // Initial call
+  </script>
+
+   
+
+
+    
+
+
+  
+</body>
+</html>
