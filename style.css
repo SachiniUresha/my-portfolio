@@ -7,6 +7,17 @@
     --amethyst: #9d4eddff;
     --heliotrope: #c77dffff;
     --mauve: #e0aaffff;
+    --purple:#9b049b;
+
+    --yellow:#ffd900;
+    --red:#ff0000;
+    --dark-red:#560f03;
+    --pink:#ff004f;
+    --green:#49ea21;
+    --white:#fff;
+    --black:#000;
+    --gray:#262626;
+
 }
 
 *{
@@ -27,7 +38,7 @@ html, body {
 
 body {
     background: linear-gradient(to right, var(--russian-violet), var(--russian-violet-2), var(--persian-indigo), var(--tekhelet), var(--french-violet), var(--amethyst));
-    color: #fff;
+    color: var(--white);
 }
 
 #home {
@@ -35,7 +46,7 @@ body {
     height: 100vh;
     width: 100%;
     font-weight: bolder;
-    color: black;
+    color: var(--black);
 
 }
 
@@ -47,7 +58,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color:#ffd900;
+    background-color:var(--yellow);
     position: absolute;
     border-bottom: 2px solid #10002bff;
     border-top: 2px solid #10002bff;
@@ -65,7 +76,7 @@ body {
 
 #nav a {
     text-decoration: none;
-    color: #000;
+    color: var(--black);
     font-size: 18px;
     position: relative;
     color: #10002bff;
@@ -76,7 +87,7 @@ body {
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: var(--red);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -102,17 +113,17 @@ body {
 }
 
 .circle:nth-child(2){
-    background: white;
+    background: var(--white);
     width: 32rem;
-    background-image: url("images/1742978620122.jpeg");
+    background-image: url("images/home.jpeg");
     background-size: 100%;
     background-repeat: no-repeat;
-    border: .1rem solid white;
+    border: .1rem solid var(--white);
     border-radius: 50%;
-    box-shadow: 0 0 4rem white, 
-    inset 0 0 2rem white,
-    0 0 6rem rgb(73, 234, 33),
-    0 0 10rem rgb(155, 4, 155);
+    box-shadow: 0 0 4rem var(--white), 
+    inset 0 0 2rem var(--white),
+    0 0 6rem var(--green),
+    0 0 10rem var(--purple);
 }
 
 .header-text {
@@ -121,7 +132,7 @@ body {
     left: 50%;
     right: 10%;           /* Position horizontally in the center */
     transform: translate(-100%, -50%); /* Center the element */
-    color: white;        /* Make the text white */
+    color: var(--white);        /* Make the text white */
     font-size: 2rem;     /* Adjust text size if necessary */
     z-index: 2;          /* Ensure it's above other content */
     font-size: 30px;
@@ -134,7 +145,7 @@ body {
 }
 
 .header-text h1 span {
-    color :#ffd900;
+    color :var(--yellow);
 }
 
 #title {
@@ -143,7 +154,7 @@ body {
     white-space: nowrap;
     width: 0;
     overflow: hidden;
-    border-right: 0.15em solid #fff;
+    border-right: 0.15em solid var(--white);
     animation: typing 3s steps(30) forwards, blink-caret 0.75s step-end infinite;
 
 }
@@ -167,7 +178,7 @@ body {
 
 #about{
     padding: 50px 50px;
-    color:white ;
+    color:var(--white) ;
 }
 
 .row{
@@ -180,6 +191,8 @@ body {
 .about-col-1{
     flex-basis: 25%;
     position: relative;
+    width: 100%;
+    height: 100vh;
 }
 
 .about-col-1 img{
@@ -197,12 +210,13 @@ body {
 }
 .about-col-2 p{
     margin-top: 3%;
+    text-align: justify;
 }
 
 .sub-title{
     font-weight: bolder;
     font-size: 50px;
-    color: #ffd900;
+    color: var(--yellow);
 }
 
 .tab-titles{
@@ -222,7 +236,7 @@ body {
     content:'';
     width:0;
     height: 3px;
-    background: red;
+    background: var(--red);
     position: absolute;
     left: 0;
      bottom: -8px;
@@ -237,11 +251,12 @@ body {
 .tab-contents dl dd{
     list-style: none;
     margin:10px 0;
+    font-size: small;
 }
 
 .tab-contents dl dt{
-    color: #ff004f;
-    font-size: 14px;
+    color: var(--pink);
+    font-size: 16px;
 }
 
 .tab-contents{
@@ -262,8 +277,8 @@ body {
 
 .work-list{
     display: grid; /* view s grid*/
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 80px;
     margin-top: 50px;
 
 }
@@ -287,7 +302,7 @@ body {
 .layer{  /* layer should be appear on top of the image*/
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6),blue);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), var(--french-violet));
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -303,16 +318,17 @@ body {
 }
 
 .layer h3{
-    font-weight: 500;
+    font-weight: bold;
     margin-bottom: 20px;
+    font-size: larger;
 }
  .layer a {
     margin-top: 20px;
-    color: red;
+    color: var(--red);
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: #fff;
+    background: var(--white);
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -328,12 +344,13 @@ body {
 .work:hover .layer{
     height: 100%; /* when hover the lyer is visible by height =100%*/
 }
+
 .btn{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid red;
-    color: white;
+    border: 1px solid var(--red);
+    color: var(--white);
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -343,7 +360,7 @@ body {
 }
 
 .btn:hover{
-    background: red;
+    background: var(--red);
 
 }
 
@@ -358,13 +375,13 @@ body {
 
 .services-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
 .services-list div{
-    background: #ffd900;
+    background: var(--persian-indigo);
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -377,26 +394,32 @@ body {
 .services-list div i{
     font-size: 50px;
     margin-bottom: 30px;
+
 }
 
 .services-list div h2{
     font-size: 30px;
-    font-weight: 500;
+    font-weight: bolder;
     margin-bottom: 15px;
 
 }
 
+.services-list div p{
+    font-size: small;
+    text-align: justify;
+}
+
 .services-list div a{
     text-decoration: none;
-    color: #ff004f;
-    font-size:12px ;
+    color: var(--pink);
+    font-size:16px ;
     margin-top: 20px;
     display: inline-block;
 
 }
 
 .services-list div:hover{
-    background: #5a189a;
+    background: var(--russian-violet-2);
     transform: translate(+10px);
 }
 
@@ -421,7 +444,7 @@ body {
 }
 
 .contact-left p i{
-    color: #ff004f;
+    color: var(--white);
     margin-right: 15px;
     font-size: 25px;
 
@@ -431,27 +454,30 @@ body {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #9B4DFF;
+    color: var(--white);
     display: inline-block;
     transition: transform 0.5s;
-    padding-top: 50px;
-    
+    padding-top: 30px;
+    text-shadow: 0 0 5px #9B4DFF,
+                 0 0 10px #9B4DFF,
+                 0 0 20px #D19CFF,
+                 0 0 30px #D19CFF;  
 }
 
 .social-icons a:hover{
-    color: #ffd900;
+    color: var(--yellow);
     transform: translateY(-5px); /*moving up*/
 }
 
 .btn.btn2{ /*no space*/
     display: inline-block;
-    background-color: red;
+    background-color: var(--red);
 
 
 }
 .btn.btn2:active {
-    background-color: rgb(235, 16, 16);
-    border: 1px solid #560f03;
+    background-color: var(--red);
+    border: 1px solid var(--dark-red);
   }
   
 
@@ -464,10 +490,10 @@ form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
+    background: var(--gray);
     padding: 15px;
     margin: 15px 0;
-    color: #fff;
+    color: var(--white);
     font-size: 18px;
     border-radius: 6px;
 }
@@ -491,6 +517,12 @@ footer .copyright{
 
 .copyright i{
     color: var(--mauve);
+}
+
+#msg{
+    color: var(--green);
+    margin-top: -40px;
+    display: block;
 }
 
 
@@ -593,8 +625,4 @@ nav .fa-solid{  /*classname of icon*/
 
 }
 
-#msg{
-    color: #61b752;
-    margin-top: -40px;
-    display: block;
-}
+
