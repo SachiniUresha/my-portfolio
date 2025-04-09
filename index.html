@@ -276,94 +276,13 @@
             </div>
         </footer>
 
+
+        
+
     
 
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
 
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-
-        function openmenu(){
-            sidemenu.style.right = "0"; // whenever side =0 it is visible
-            
-
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px"; // whenever side =0 it is visible
-
-
-        }
-    </script>
-    
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbykKK9Vacp-xTCDeL6UACm-Z38voUkSIvf4xx-HGBP4hiDaezpfzQg3dzpDFd5Sy4df/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg  = document.getElementById("msg");
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message sent successfully"
-                setTimeout(function(){ //after 5 s the msg will be diappeared
-                    msg.innerHTML = ""
-                },5000)
-                form.reset() //reset the input fields
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
-
-    <script>
-        const titles = [
-            "💻 DevOps Enthusiast ",
-            "🌐 Full Stack Explorer",
-            "✍️ Tech Blogger",
-            "☁️ Cloud Learner ", 
-    ];
-    
-        let titleIndex = 0;
-        let charIndex = 0;
-        const titleElement = document.getElementById('title');
-        let typing = true;
-
-        function typeTitle() {
-            if (charIndex < titles[titleIndex].length) {
-                titleElement.textContent += titles[titleIndex].charAt(charIndex);
-                charIndex++;
-                setTimeout(typeTitle, 100); // Adjust typing speed here
-            } else {
-                setTimeout(deleteTitle, 1000); // Wait before deleting the current title
-            }
-        }
-
-        function deleteTitle() {
-            if (charIndex > 0) {
-                titleElement.textContent = titleElement.textContent.slice(0, -1);
-                charIndex--;
-                setTimeout(deleteTitle, 50); // Adjust deleting speed here
-            } else {
-                titleIndex = (titleIndex + 1) % titles.length; // Move to next title
-                setTimeout(typeTitle, 1000); // Wait before typing the next title
-            }
-        }
-
-        typeTitle(); // Initial call
-    </script>
+<script src="scripts.js"></script>
 
    
 </body>
