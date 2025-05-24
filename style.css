@@ -259,6 +259,12 @@ body {
     font-size: 16px;
 }
 
+.tab-contents dl dt span{
+    list-style: none;
+    margin:10px 0;
+    font-size: small;
+}
+
 
 
 
