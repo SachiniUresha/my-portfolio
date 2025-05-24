@@ -263,6 +263,7 @@ body {
     list-style: none;
     margin:10px 0;
     font-size: small;
+    color: var(--white);
 }
 
 
