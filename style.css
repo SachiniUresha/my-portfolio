@@ -248,7 +248,7 @@ body {
 
 }
 
-.tab-contents dl span{
+.tab-contents dl dd{
     list-style: none;
     margin:10px 0;
     font-size: small;
@@ -258,6 +258,14 @@ body {
     color: var(--pink);
     font-size: 16px;
 }
+
+.tab-contents dl span{
+    list-style: none;
+    margin:10px 0;
+    font-size: small;
+}
+
+
 
 .tab-contents{
     display: none; /*all are hidden */
